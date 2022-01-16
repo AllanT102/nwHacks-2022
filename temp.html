@@ -1,58 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <style>
-            body{
-               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            input,span{
-               font-size: 20px;
-            }
-         </style>
-        <title> Temperature Conversion Calculators</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <title> Temperature Conversion Calculators</title>
+        <link rel="stylesheet" href="tempstyle.css"/>
         </head>
     <body>
-        <h1>Temperature Conversion Calculators</h1>
-        <h2>Convert between celsius, Fahrenheit, Kelvin</h2>
-
-
+        <div class="top-bar">
+            <div> <h1>Temperature Conversion Calculators</h1>
+                <h3 style="color:rgb(61, 57, 57);">Convert between celsius, Fahrenheit, Kelvin</h3></div>
+        </div>
         
+
+
+        <div class="table">
+            <table>
+                <tr class="row">
+                    <th>
         <p>
-            <h3>Convert from Celcius to Fahrenheit, Kelvin</h3>
-            <label>Celcius</label>
+            <h2>Convert from Celcius to Fahrenheit, Kelvin</h2>
+            <label>Enter Celcius:</label>
             <input id="inputC" type="number" placeholder="Celcius"
             oninput="celcius(this.value)"
             onchange="celcius(this.value)">
         </p>
-        <p>Fahrenheit: <span class="outputFahrenheit1"></span></p>
-        <p>Kelvin: <span class="outputKelvin1"></span></p>
-
+        <p> <h2>Fahrenheit: </h2><span class="outputFahrenheit1"></span></p>
+        <p><h2>Kelvin: </h2><span class="outputKelvin1"></span></p></p>
+    </th>
+         
+    <th>
         <p>
-            <h3>Convert from Fahrenheit to Celcius, Kelvin</h3>
-            <label>Fahrenheit</label>
+            <h2>Convert from Fahrenheit to Celcius, Kelvin</h2>
+            <label>Enter Fahrenheit:</label>
             <input id="inputC" type="number" placeholder="Fahrenheit"
             oninput="Fahrenheit(this.value)"
             onchange="Fahrenheit(this.value)">
         </p>
-        <p>Celcius: <span class="outputCelcius2"></span></p>
-        <p>Kelvin: <span class="outputKelvin2"></span></p>
+        <p><h2>Celcius:</h2> <span class="outputCelcius2"></span></p>
+        <p><h2>Kelvin: </h2><span class="outputKelvin2"></span></p>
+    </th>
 
-
+    <th>
         <p>
-            <h3>Convert from Kelvin to Celcius, Fahrenheit</h3>
-            <label>Kelvin</label>
+            <h2>Convert from Kelvin to Celcius, Fahrenheit</h2>
+            <label>Enter Kelvin:</label>
             <input id="inputC" type="number" placeholder="Kelvin"
             oninput="Kelvin(this.value)"
             onchange="Kelvin(this.value)">
         </p>
-        <p>Celcius: <span class="outputCelcius3"></span></p>
-        <p>Fahrenheit: <span class="outputFahrenheit3"></span></p>
+        <p><h2>Celcius: </h2><span class="outputCelcius3"></span></p>
+        <p><h2>Fahrenheit:</h2> <span class="outputFahrenheit3"></span></p>
+    </th>
+    </table>
+    </div>
 
 
 
-       
-
-        
         
         <script>
             function celcius(temp){
