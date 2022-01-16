@@ -81,3 +81,8 @@ th img:hover {
 .row th {
     padding: 10px;
   }
+
+  .row h1{
+      padding: 15px;
+  }
+
