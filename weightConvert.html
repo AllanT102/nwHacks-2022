@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      var lb, oz, kg, g;
+      var opt1, opt2, opt3, opt4;
+
+      function validate1(){
+        lb = document.forms["input1"]["lbVal"].value;
+        oz = lb*16;
+        kg = lb/2.20462;
+        g = lb/0.00220462;
+        opt1 = lb+ "lb is ";
+        opt2 = oz + "oz or ";
+        opt3 = kg + "kg or ";
+        opt4 = g + "g";
+        document.getElementById("oVal").innerHTML = opt1;
+        document.getElementById("1Val").innerHTML = opt2;
+        document.getElementById("2Val").innerHTML = opt3;
+        document.getElementById("3Val").innerHTML = opt4;
+      }
+      function validate2(){
+        oz = document.forms["input2"]["ozVal"].value;
+        lb = oz/16;
+        kg = oz*0.0283495;
+        g = oz*28.3485;
+        opt1 = oz+ "oz is ";
+        opt2 = lb + "lb or ";
+        opt3 = kg + "kg or ";
+        opt4 = g + "g";
+        document.getElementById("oVal").innerHTML = opt1;
+        document.getElementById("1Val").innerHTML = opt2;
+        document.getElementById("2Val").innerHTML = opt3;
+        document.getElementById("3Val").innerHTML = opt4;
+      }
+      function validate3(){
+        kg = document.forms["input3"]["kgVal"].value;
+        lb = kg/0.453592;
+        oz = kg/0.0283495;
+        g = kg*1000;
+        opt1 = kg+ "kg is ";
+        opt2 = lb + "lb or ";
+        opt3 = oz + "oz or ";
+        opt4 = g + "g";
+        document.getElementById("oVal").innerHTML = opt1;
+        document.getElementById("1Val").innerHTML = opt2;
+        document.getElementById("2Val").innerHTML = opt3;
+        document.getElementById("3Val").innerHTML = opt4;
+      }
+      function validate4(){
+        g = document.forms["input4"]["gVal"].value;
+        lb = g/453.592;
+        oz = g/28.3495;
+        kg = g/1000;
+        opt1 = g+ "g is ";
+        opt2 = lb + "lb or ";
+        opt3 = oz + "oz or ";
+        opt4 = kg + "kg";
+        document.getElementById("oVal").innerHTML = opt1;
+        document.getElementById("1Val").innerHTML = opt2;
+        document.getElementById("2Val").innerHTML = opt3;
+        document.getElementById("3Val").innerHTML = opt4;
+      }
+        
+    </script>
+  </head>
+  <body>
+    <p>enter the weight in the unit before conversion</p>
+    <form name="input1" action="javascript:validate1();">
+      lb: <input type="text" name="lbVal" size="5">
+      <input type="submit" value="Convert Weight">
+    </form>
+    <form name="input2" action="javascript:validate2();">
+        oz: <input type="text" name="ozVal" size="5">
+        <input type="submit" value="Convert Weight">
+      </form>
+      <form name="input3" action="javascript:validate3();">
+        kg: <input type="text" name="kgVal" size="5">
+        <input type="submit" value="Convert Weight">
+      </form>
+      <form name="input4" action="javascript:validate4();">
+        g: <input type="text" name="gVal" size="5">
+        <input type="submit" value="Convert Weight">
+      </form>
+    <p id="oVal"></p>
+    <br>
+    <p id="1Val"></p>
+    <br>
+    <p id="2Val"></p>
+    <br>
+    <p id="3Val"></p>
+  </body>
+</html>
