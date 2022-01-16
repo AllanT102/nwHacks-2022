@@ -64,3 +64,11 @@ body {
     height: 400;
   }
 
+  th img {
+    border: 5px solid black;
+    border-radius: 100px;
+}
+
+th img:hover {
+    transform: scale(1.1);
+}
