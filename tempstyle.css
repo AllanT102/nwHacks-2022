@@ -16,7 +16,10 @@ body {
     font-size: 120%;
     
 }
-
+       .bg{
+        background: linear-gradient(#81bbeb, #eb9db7);
+        height: 100vh;
+    }
 #home {
     left: 0px;
   width: 30px;
