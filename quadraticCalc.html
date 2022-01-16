@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      var a, b, c;
+      var outputText;
+
+      function validate(){
+        a = document.forms["input"]["aVal"].value;
+        b = document.forms["input"]["bVal"].value;
+        c = document.forms["input"]["cVal"].value;
+        var x1 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+        var x2 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+        x = x1 + " or " + x2;
+        document.getElementById("xVal").innerHTML = x;
+      }
+    </script>
+  </head>
+  <body>
+    <p>enter the coefficients for the quadratic equation</p>
+    <form name="input" action="javascript:validate();">
+      a: <input type="text" name="aVal" size="5" required>
+      b: <input type="text" name="bVal" size="5" required>
+      c: <input type="text" name="cVal" size="5" required>
+      <br>
+      <br>
+      <input type="submit" value="Calculate X">
+    </form>
+    <p id="xVal"/>
+  </body>
+</html>

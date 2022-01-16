@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            input,span{
+               font-size: 20px;
+            }
+         </style>
+        <title> Temperature Conversion Calculators</title>
+        </head>
+    <body>
+        <h1>Temperature Conversion Calculators</h1>
+        <h2>Convert between celsius, Fahrenheit, Kelvin</h2>
+
+
+        
+        <p>
+            <h3>Convert from Celcius to Fahrenheit, Kelvin</h3>
+            <label>Celcius</label>
+            <input id="inputC" type="number" placeholder="Celcius"
+            oninput="celcius(this.value)"
+            onchange="celcius(this.value)">
+        </p>
+        <p>Fahrenheit: <span class="outputFahrenheit1"></span></p>
+        <p>Kelvin: <span class="outputKelvin1"></span></p>
+
+        <p>
+            <h3>Convert from Fahrenheit to Celcius, Kelvin</h3>
+            <label>Fahrenheit</label>
+            <input id="inputC" type="number" placeholder="Fahrenheit"
+            oninput="Fahrenheit(this.value)"
+            onchange="Fahrenheit(this.value)">
+        </p>
+        <p>Celcius: <span class="outputCelcius2"></span></p>
+        <p>Kelvin: <span class="outputKelvin2"></span></p>
+
+
+        <p>
+            <h3>Convert from Kelvin to Celcius, Fahrenheit</h3>
+            <label>Kelvin</label>
+            <input id="inputC" type="number" placeholder="Kelvin"
+            oninput="Kelvin(this.value)"
+            onchange="Kelvin(this.value)">
+        </p>
+        <p>Celcius: <span class="outputCelcius3"></span></p>
+        <p>Fahrenheit: <span class="outputFahrenheit3"></span></p>
+
+
+
+       
+
+        
+        
+        <script>
+            function celcius(temp){
+                temp = parseFloat(temp);
+                CtoF(temp);
+                CtoK(temp);
+            }
+            function CtoF(temp){
+                document.querySelector(".outputFahrenheit1").innerHTML=(temp*1.8)+32;
+            }
+            function CtoK(temp2){
+                document.querySelector(".outputKelvin1").innerHTML=(temp2+273.15);
+            }
+
+            function Fahrenheit(temp){
+                temp = parseFloat(temp);
+                FtoC(temp);
+                FtoK(temp);
+            }
+            function FtoC(temp){
+                document.querySelector(".outputCelcius2").innerHTML=(temp-32)/1.8;
+            }
+            function FtoK(temp){
+                document.querySelector(".outputKelvin2").innerHTML=((temp-32)/1.8)+273.15;
+            }
+
+            function Kelvin(temp){
+                temp = parseFloat(temp);
+                KtoC(temp);
+                KtoF(temp);
+            }
+            function KtoC(temp){
+                document.querySelector(".outputCelcius3").innerHTML=((temp-273.15)*1.8)+32;
+            }
+            function KtoF(temp){
+                document.querySelector(".outputFahrenheit3").innerHTML=temp-273.15;
+            }
+           
+
+        </script>
+
+
+    </body>
+</html>
