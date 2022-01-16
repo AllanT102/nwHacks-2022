@@ -86,5 +86,9 @@ th img:hover {
       padding: 15px;
   }
 
-  
+.quadimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
 
