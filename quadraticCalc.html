@@ -1,6 +1,11 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="homepagestyle.css"/>
+     <title>LottaCalc</title>
     <script>
       var a, b, c;
       var outputText;
@@ -17,6 +22,10 @@
     </script>
   </head>
   <body>
+    <div class="top-bar">
+      <div> <h1>LottaCalc</h1></div>
+  </div>
+  <title>Quadratic Equaltion Calculator</title>
     <p>enter the coefficients for the quadratic equation</p>
     <form name="input" action="javascript:validate();">
       a: <input type="text" name="aVal" size="5" required>
@@ -27,5 +36,17 @@
       <input type="submit" value="Calculate X">
     </form>
     <p id="xVal"></p>
+    <div class="table">
+            <table>
+                <tr class="row"> 
+                    <th>
+                        <a href="homepage.html">
+                            <img src=""
+                        width="300" height="300">
+                         </a>
+                  </th>
+                </tr>
+            </table>
+      </div>
   </body>
 </html>
