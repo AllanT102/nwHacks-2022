@@ -16,7 +16,7 @@
         c = document.forms["input"]["cVal"].value;
         var x1 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
         var x2 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
-        x = x1 + " or " + x2;
+        x = "x = " + x1 + " or " + x2;
         document.getElementById("xVal").innerHTML = x;
       }
     </script>
@@ -24,26 +24,26 @@
   <body>
     <div class="top-bar">
       <div> <h1>LottaCalc</h1></div>
+   </div>
+   <div class="body">
+   <h1>Quadratic Equaltion Calculator</h1>>
   </div>
-  <title>Quadratic Equaltion Calculator</title>
-    <p>enter the coefficients for the quadratic equation</p>
-    <form name="input" action="javascript:validate();">
-      a: <input type="text" name="aVal" size="5" required>
-      b: <input type="text" name="bVal" size="5" required>
-      c: <input type="text" name="cVal" size="5" required>
+    <p style="font-size: 40;">Enter the coefficients for the quadratic equation</p>
+    <form name="input" action="javascript:validate();" style="font-size: xx-large;">
+      a: <input type="text" name="aVal" size="30" required>
+      b: <input type="text" name="bVal" size="30" required>
+      c: <input type="text" name="cVal" size="30" required>
       <br>
       <br>
-      <input type="submit" value="Calculate X">
+      <input type="submit" value="Calculate X" >
     </form>
-    <p id="xVal"></p>
+    
+   
     <div class="table">
             <table>
                 <tr class="row"> 
                     <th>
-                        <a href="homepage.html">
-                            <img src=""
-                        width="300" height="300">
-                         </a>
+                      <p id="xVal" style="font-size: x-large;"></p>
                   </th>
                 </tr>
             </table>

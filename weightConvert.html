@@ -74,30 +74,41 @@
     <div class="top-bar">
         <div> <h1>LottaCalc</h1></div>
     </div>
-    <title>Weight Units Converter</title>
-    <p>enter the weight in the unit before conversion</p>
-    <form name="input1" action="javascript:validate1();">
-      lb: <input type="text" name="lbVal" size="5">
+    <div class="body">
+        <h1>Weight Units Converter</h1>
+    </div>
+    
+    <p style="font-size: 40;">Enter the weight in the unit before conversion</p style="font-size: xx-large;">
+    <form name="input1" action="javascript:validate1();" style="font-size: xx-large;">
+      lb: <input type="text" name="lbVal" size="30">
       <input type="submit" value="Convert Weight">
     </form>
-    <form name="input2" action="javascript:validate2();">
-        oz: <input type="text" name="ozVal" size="5">
+    <form name="input2" action="javascript:validate2();" style="font-size: xx-large;">
+        oz: <input type="text" name="ozVal" size="30">
         <input type="submit" value="Convert Weight">
       </form>
-      <form name="input3" action="javascript:validate3();">
-        kg: <input type="text" name="kgVal" size="5">
+      <form name="input3" action="javascript:validate3();" style="font-size: xx-large;">
+        kg: <input type="text" name="kgVal" size="30">
         <input type="submit" value="Convert Weight">
       </form>
-      <form name="input4" action="javascript:validate4();">
-        g: <input type="text" name="gVal" size="5">
+      <form name="input4" action="javascript:validate4();" style="font-size: xx-large;">
+        g: <input type="text" name="gVal" size="30">
         <input type="submit" value="Convert Weight">
       </form>
-    <p id="oVal"></p>
+      <div class="table">
+          <table>
+        <tr class="row"> 
+            <th>
+    <p id="oVal" style="font-size: x-large;"></p>
     <br>
-    <p id="1Val"></p>
+    <p id="1Val" style="font-size: x-large;"></p>
     <br>
-    <p id="2Val"></p>
+    <p id="2Val" style="font-size: x-large;"></p>
     <br>
-    <p id="3Val"></p>
+    <p id="3Val" style="font-size: x-large;"></p>
+    </th>
+    </tr>
+    </table>
+      </div>
   </body>
 </html>
